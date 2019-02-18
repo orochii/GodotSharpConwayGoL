@@ -1,0 +1,24 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Love.cs" type="Script" id=1]
+[ext_resource path="res://OroDamageInside.ttf" type="DynamicFontData" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+
+size = 32
+use_mipmaps = false
+use_filter = false
+font_data = ExtResource( 2 )
+_sections_unfolded = [ "Font", "Settings" ]
+
+[node name="Node2D" type="Node2D" index="0"]
+
+script = ExtResource( 1 )
+cycleTime = 1.0
+cellSize = 10
+cellWidth = 60
+cellHeight = 60
+activeCell = Color( 1, 0.160156, 0.160156, 1 )
+textFont = SubResource( 1 )
+
+
